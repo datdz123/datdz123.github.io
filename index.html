@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ask Her Out</title>
-
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư tình đặc biệt</title>
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
     <div class="container">
-      <div
-        class="tenor-gif-embed"
-        data-postid="22885016"
-        data-share-method="host"
-        data-aspect-ratio="1.04918"
-        data-width="100%"
-      >
-        <a href="https://tenor.com/view/manja-gif-22885016">Manja Sticker</a
-        >from
-        <a href="https://tenor.com/search/manja-stickers">Manja Stickers</a>
-      </div>
-      <script
-        type="text/javascript"
-        async
-        src="https://tenor.com/embed.js"
-      ></script>
-      <h1>Tối nay đi chơi valentine chứ em 12312 Hiền xinh đẹp 🤗</h1>
-      <p>A đã mua vé xem phim rồi 321312123312312.</p>
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <div class="letter-header">
+                            <i class="fa-solid fa-heart"></i>
+                            <strong>Gửi em bé iuu Hiền :3</strong>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
 
-      <div class="btn">
-        <a href="yes.html">Em đồng ý1231232</a>
-        <a href="no1.html">Không , em bận rồi123213 </a>
-      </div>
+                        <h3 style="text-align: center; margin-bottom: 20px;">Em bị triệu tập đi uống nước với anh 🥤</h3>
+
+                        <p>
+                            ⛳ Địa điểm: Để anh chọn<br>
+                            🕒 Thời gian: 8h tối nay (08/07/2025) 
+                        </p>
+
+                        <div class="signature">
+                            <p>Chốt đơn chưa? 😎</p>
+                            <p class="name">Quang Đạt</p>
+                            <div class="hearts">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+        <a href="no1.html" class="continue-btn">Tiếp tục ❤️</a>
     </div>
-  </body>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        const continueBtn = document.querySelector('.continue-btn');
+        
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+            // Hiện nút sau khi mở/đóng thư
+            setTimeout(() => {
+                continueBtn.style.opacity = '1';
+                continueBtn.style.transform = 'translateY(0)';
+            }, 1500); // Đợi animation thư hoàn thành
+        });
+    </script>
+</body>
 </html>
