@@ -311,6 +311,9 @@ body{
         width: 320px;
         height: 240px;
     }
+    .container {
+        height: 70vh;
+    }
     
     .envelope-wrapper > .envelope::before {
         border-top: 120px solid var(--envelope-tab);
