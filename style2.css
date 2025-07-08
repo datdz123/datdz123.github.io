@@ -312,7 +312,8 @@ body{
         height: 240px;
     }
     .container {
-        height: 70vh;
+        height: 70vh !important;
+        overflow: hidden;
     }
     
     .envelope-wrapper > .envelope::before {
